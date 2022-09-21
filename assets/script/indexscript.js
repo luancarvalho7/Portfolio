@@ -83,13 +83,13 @@ function darkModeOFF() {
 }
 function restoreImages() {
     let logoIMG = document.getElementById('logonav');
-    logoIMG.src = 'assets/images/icons/black/Logo.png';
+    logoIMG.src = 'assets/images/icons/Black/Logo.png';
     let LinkedinIMG = document.getElementById('linkedin-ico');
-    LinkedinIMG.src = 'assets/images/icons/black/linkedinBlack.png';
+    LinkedinIMG.src = 'assets/images/icons/Black/linkedinBlack.png';
     let BehanceIMG = document.getElementById('behance-ico');
-    BehanceIMG.src = 'assets/images/icons/black/behanceBlack.png';
+    BehanceIMG.src = 'assets/images/icons/Black/behanceBlack.png';
     let GitHubIMG = document.getElementById('github-ico');
-    GitHubIMG.src = 'assets/images/icons/black/gitblack.png';
+    GitHubIMG.src = 'assets/images/icons/Black/gitblack.png';
 }
 function restoreButtons() {
     const darkM_Button = document.getElementById('nav-darkmode');
