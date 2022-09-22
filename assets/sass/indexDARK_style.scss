@@ -61,6 +61,10 @@ body {
     }
 }
 
+.nav-btn {
+    cursor: pointer;
+}
+
 .nav-icon {
     width: 45px;
     height: 45px;
@@ -405,6 +409,9 @@ main {
         display: flex;
         padding: 10px 0px;
         font-size: 2.0em;
+        a{
+            color: var.$dark-txtcolor;
+        }
     }
     #mDarkIcon {
         position: relative;

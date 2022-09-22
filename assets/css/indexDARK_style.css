@@ -48,6 +48,10 @@ body {
   color: #EEF0F4;
 }
 
+.nav-btn {
+  cursor: pointer;
+}
+
 .nav-icon {
   width: 45px;
   height: 45px;
@@ -350,6 +354,9 @@ main {
     display: flex;
     padding: 10px 0px;
     font-size: 2em;
+  }
+  .right-menu-li a {
+    color: #EEF0F4;
   }
   #mDarkIcon {
     position: relative;
