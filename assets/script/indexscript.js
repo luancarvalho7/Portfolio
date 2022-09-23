@@ -41,6 +41,10 @@ function retractMenu() {
     rightMenu.style.boxShadow = "none";
 }
 
+
+// DARK MODE VVVV
+
+
 // DARKMODE FUNCTIONS VV
 function darkModeON() {
 
@@ -103,4 +107,11 @@ function restoreButtons() {
     darkM_MobileButton.classList.add("right-menu-li");
     lightM_MobileButton.classList.remove("right-menu-li");
     lightM_MobileButton.classList.add("_disabled");
+}
+// DARKMODE CONTINUE 
+continuousDarkMode();
+function continuousDarkMode(){
+    if (localStorage.getItem('DarkON')) {
+        darkModeON();
+    }
 }

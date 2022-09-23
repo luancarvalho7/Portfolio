@@ -30,9 +30,9 @@
                 <li> <a href="contato.html"> Contato </a></li>
             </ul>
             <div id="right-nav">
-                <a id="nav-menu" onclick="expandMenu()" class="nav-btn"> <span class="material-symbols-outlined"> menu </span> </a>
-                <a id="nav-darkmode" onclick="darkModeON()" class="nav-btn"><span class="material-symbols-outlined"> dark_mode </span> </a>
-                <a id="nav-lightmode" onclick="darkModeOFF()" class="nav-btn"><span class="material-symbols-outlined"> light_mode </span> </a>
+                <a id="nav-menu" onclick="expandMenu();" class="nav-btn"> <span class="material-symbols-outlined"> menu </span> </a>
+                <a id="nav-darkmode" onclick="darkModeON();storageDark()" class="nav-btn"><span class="material-symbols-outlined"> dark_mode </span> </a>
+                <a id="nav-lightmode" onclick="darkModeOFF();storageLight()" class="nav-btn"><span class="material-symbols-outlined"> light_mode </span> </a>
             </div>
 
         </div>
@@ -122,5 +122,5 @@
     </main>
 </body>
 <script src='assets/script/indexscript.js'></script>
-
+<script src='assets/script/darkmodeMutuals.js'></script>
 </html>
