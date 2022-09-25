@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Sobre</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="shortcut icon" href="ico.ico" type="image/x-icon">
+    <link rel='stylesheet' type='text/css' media='screen' href='assets/css/sobre_style.css' id="cssLink">
+    <!-- ICONS GOOGLE -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!--FONTS GOOGLE-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav id="nav-general">
+        <div id="navigation">
+            <a href="index.html"><img src="assets/images/icons/Black/Logo.png" class="nav-icon" id="logonav"></a>
+            <ul>
+                <li> <a href="trabalhos.html"> Trabalhos </a></li>
+                <li> <a href="sobre.html" class="current-page_NAV"> Sobre </a></li>
+                <li> <a href="contato.html"> Contato </a></li>
+            </ul>
+            <div id="right-nav">
+                <a id="nav-menu" onclick="expandMenu();" class="nav-btn"> <span class="material-symbols-outlined"> menu
+                    </span> </a>
+                <a id="nav-darkmode" onclick="darkModeON();storageDark()" class="nav-btn"><span
+                        class="material-symbols-outlined"> dark_mode </span> </a>
+                <a id="nav-lightmode" onclick="darkModeOFF();storageLight()" class="nav-btn"><span
+                        class="material-symbols-outlined"> light_mode </span> </a>
+            </div>
+
+        </div>
+    </nav>
+    <nav id="right-menu">
+        <div id="menu-seminav">
+            <span class="material-symbols-outlined" onclick="retractMenu()">close</span>
+        </div>
+        <article>
+            <ul class="right-menu-items">
+                <li class="right-menu-li"> <a href="trabalhos.html"> Trabalhos </a> </li>
+                <li class="right-menu-li"> <a href="sobre.html"> Sobre </a> </li>
+                <li class="right-menu-li"> <a href="contato.ht  ml"> Contato </a> </li>
+                <li class="right-menu-li catline"> </li>
+            </ul>
+            <ul class="right-menu-items">
+                <li class="right-menu-li" id="darkMobileBTN"> <a onclick="darkModeON();storageDark()"> <span
+                            class="material-symbols-outlined" id="mDarkIcon"> dark_mode </span> Modo Escuro</a> </li>
+                <li class="_disabled" id="lightMobileBTN"> <a onclick="darkModeOFF();storageLight()"> <span
+                            class="material-symbols-outlined" np id="mDarkIcon"> light_mode </span> Modo Claro </a>
+                </li>
+            </ul>
+        </article>
+    </nav>
+    <main>
+        <div class="content">
+            <section id="luan-info">
+                <div id="about-luan">
+                    <div id="current-page">Sobre</div>
+                    <div id="information">
+                        <h1 class="titleSyne" id="about-title">Luan <br>Carvalho</h1>
+                        <p id="about-text">Olá, me chamo Luan, sou apaixonado por Design e Programação. <br>
+                            Sou Designer Gráfico e Desenvolvedor Front End com foco em criar sites <br>
+                            Modernos e visualmente atrativos.
+                        </p>
+                    </div>
+                    <a id="download-curriculo" href=""><button id="btncurriculo" class="mainbutton" href="">
+                            Currículo</button> </a>
+                    <figcaption id="about-deco-mobile"></figcaption>
+                </div>
+                <figcaption id="about-deco"></figcaption>
+            </section>
+            <section id="techs">
+                <div id="info-techs">
+                    <h1 class="titleSyne">Tecnologias:</h1>
+                    <p>Aqui estão as ferramentas que eu uso para para design e<br>
+                        desenvolvimento, usadas para a melhor experiência digital<br>
+                        possível. Na minha opinião as ferramentas não são<br>
+                        permanentes e sempre podemos tentar algo novo!
+                    </p>
+                    <img src="assets/images/icons/Black/Logo.png" id="logoTechs">
+                </div>
+                <div id="techlist">
+                    <ul>
+                        <li>
+                            <div class="tech-img"><img src="assets/images/icons/Colorful/Photoshop 1.png"> </div>
+                            <h1>Adobe Photoshop CC 2022</h1>
+                        </li>
+                        <li>
+                            <div class="tech-img"><img src="assets/images/icons/Colorful/Figma 1.png"> </div>
+                            <h1>Figma</h1>
+                        </li>
+                        <li>
+                            <div class="tech-img"><img src="assets/images/icons/Colorful/Html 1.png"> </div>
+                            <h1>HTML5</h1>
+                        </li>
+                        <li>
+                            <div class="tech-img"><img src="assets/images/icons/Colorful/Css 1.png"> </div>
+                            <h1>CSS3</h1>
+                        </li>
+                        <li>
+                            <div class="tech-img"><img src="assets/images/icons/Colorful/Js 1.png"> </div>
+                            <h1>JavaScript</h1>
+                        </li>
+                        <li>
+                            <div class="tech-img"><img src="assets/images/icons/Colorful/Sass 1.png"> </div>
+                            <h1>Sass</h1>
+                        </li>
+                        <li>
+                            <div class="tech-img"><img src="assets/images/icons/Colorful/Csharp.png"> </div>
+                            <h1>C#</h1>
+                        </li>
+                        <li>
+                            <div class="tech-img"><img src="assets/images/icons/Colorful/Mysql 1.png"> </div>
+                            <h1>MySQL</h1>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <figcaption id="triangle-shape"> </figcaption>
+        </div>
+    </main>
+</body>
+<script src='assets/script/sobrescript.js'></script>
+<script src='assets/script/mutuals.js'></script>
+
+</html>

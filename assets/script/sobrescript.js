@@ -1,41 +1,10 @@
 console.log('bob');
-// ANIMATION WORKS
-function worksappear() {
-    const cardGraphic = document.getElementById("cardGraphic");
-    const cardWeb = document.getElementById("cardWeb");
-    cardGraphic.style.transition = "0.9s";
-    cardWeb.style.transition = "0.9s";
-
-    cardGraphic.style.transform = "translate(0px, 0px)";
-    cardWeb.style.transform = "translate(0px, 0px)";
-
-    const blur = document.getElementById("workcards");
-    blur.style.backdropFilter = "blur(8px)";
-}
-
-function worksdisappear() {
-    const cardGraphic = document.getElementById("cardGraphic");
-    const cardWeb = document.getElementById("cardWeb");
-    cardGraphic.style.transition = "0.4s";
-    cardWeb.style.transition = "0.4s";
-    cardGraphic.style.transform = "translate(0px, 800px)";
-    cardWeb.style.transform = "translate(0px, 800px)";
-
-    const blur = document.getElementById("workcards");
-    blur.style.backdropFilter = "blur(0px)";
-}
-
-
-
-
 // DARK MODE VVVV
-
-
 // DARKMODE FUNCTIONS VV
 function darkModeON() {
 
     let cssLinked = document.querySelector('#cssLink');
-    darkModeStyle = 'assets/css/indexDARK_style.css';
+    darkModeStyle = 'assets/css/sobreDARK_style.css';
     cssLinked.href = darkModeStyle;
     changeImages()
     changeButtons();
@@ -44,12 +13,8 @@ function darkModeON() {
 function changeImages() {
     let logoIMG = document.getElementById('logonav');
     logoIMG.src = 'assets/images/icons/White/Logo.png';
-    let LinkedinIMG = document.getElementById('linkedin-ico');
-    LinkedinIMG.src = 'assets/images/icons/White/linkedin.png';
-    let BehanceIMG = document.getElementById('behance-ico');
-    BehanceIMG.src = 'assets/images/icons/White/behance.png';
-    let GitHubIMG = document.getElementById('github-ico');
-    GitHubIMG.src = 'assets/images/icons/White/github.png';
+    let logoTechs = document.getElementById('logoTechs');
+    logoTechs.src = 'assets/images/icons/White/Logo.png';
 }
 function changeButtons() {
     const darkM_Button = document.getElementById('nav-darkmode');
@@ -66,7 +31,7 @@ function changeButtons() {
 // DARKMODE OFF 
 function darkModeOFF() {
     let cssLinked = document.querySelector('#cssLink');
-    lightModeStyle = 'assets/css/index_style.css';
+    lightModeStyle = 'assets/css/sobre_style.css';
     cssLinked.href = lightModeStyle;
     restoreImages();
     restoreButtons();
@@ -74,12 +39,8 @@ function darkModeOFF() {
 function restoreImages() {
     let logoIMG = document.getElementById('logonav');
     logoIMG.src = 'assets/images/icons/Black/Logo.png';
-    let LinkedinIMG = document.getElementById('linkedin-ico');
-    LinkedinIMG.src = 'assets/images/icons/Black/linkedinBlack.png';
-    let BehanceIMG = document.getElementById('behance-ico');
-    BehanceIMG.src = 'assets/images/icons/Black/behanceBlack.png';
-    let GitHubIMG = document.getElementById('github-ico');
-    GitHubIMG.src = 'assets/images/icons/Black/gitblack.png';
+    let logoTechs = document.getElementById('logoTechs');
+    logoTechs.src = 'assets/images/icons/Black/Logo.png';
 }
 function restoreButtons() {
     const darkM_Button = document.getElementById('nav-darkmode');

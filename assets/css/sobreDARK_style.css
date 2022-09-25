@@ -1,0 +1,427 @@
+::-webkit-scrollbar-track {
+  border-radius: 0.125rem;
+  background-color: #0D0D17;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  border-radius: 1rem;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #EEF0F4;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+  color: #EEF0F4;
+}
+
+body {
+  height: auto;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 80px 1fr;
+  grid-template-areas: "nav" "main";
+  font-size: 10px;
+  background-color: #0D0D17;
+}
+
+._disabled {
+  display: none;
+}
+
+._enabled {
+  display: flex;
+}
+
+.titleSyne {
+  font-family: "Syne", sans-serif;
+}
+
+#nav-general {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: nav;
+  border-bottom: solid 2px #1B1F32;
+}
+
+#navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 95%;
+  height: 100%;
+  max-width: 1960px;
+}
+#navigation ul li {
+  display: inline-block;
+  font-size: 1.6em;
+  margin: 0px 12px;
+}
+#navigation ul li a {
+  color: #EEF0F4;
+}
+
+.nav-btn {
+  cursor: pointer;
+}
+
+.nav-icon {
+  width: 45px;
+  height: 45px;
+}
+
+.material-symbols-outlined {
+  display: auto;
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+  font-size: 24px;
+  user-select: none;
+}
+
+#nav-lightmode {
+  display: flex;
+}
+
+#nav-menu {
+  display: none;
+}
+
+#right-menu {
+  display: none;
+}
+
+#bgfilter-menu {
+  display: none;
+}
+
+.current-page_NAV {
+  font-weight: 700;
+}
+
+main {
+  grid-area: main;
+  display: flex;
+  justify-content: center;
+}
+
+.content {
+  width: 100%;
+  max-width: 1960px;
+}
+
+#luan-info {
+  color: #EEF0F4;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  height: auto;
+  margin-top: 64px;
+  border-bottom: solid 2px #1B1F32;
+}
+
+#about-luan {
+  display: flex;
+  flex-direction: column;
+  margin-left: 60px;
+  margin-bottom: 64px;
+}
+
+#current-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  height: 30px;
+  width: 80px;
+  color: #6B95FF;
+  font-size: 1.2em;
+  font-weight: 700;
+  background-color: #0D1533;
+  border-radius: 8px;
+}
+
+#about-title {
+  font-size: 12em;
+}
+
+#about-text {
+  margin-top: 12px;
+  font-size: 1.8em;
+}
+
+#btncurriculo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  cursor: pointer;
+  font-family: "Syne", sans-serif;
+  font-weight: 700;
+  font-size: 2.4em;
+  height: 56px;
+  padding: 0px 36px;
+  background-color: #EEF0F4;
+  border: 0px;
+  color: #0D0D17;
+  margin-top: 24px;
+}
+
+#download-curriculo {
+  display: flex;
+  max-width: 60px;
+}
+
+#about-deco {
+  background-image: url(imgcss/Decoration001.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#techs {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 64px 0px;
+}
+
+#info-techs {
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+}
+#info-techs h1 {
+  font-size: 4.8em;
+}
+#info-techs p {
+  font-size: 1.6em;
+}
+
+#logoTechs {
+  user-select: none;
+  margin-top: 24px;
+  width: 230px;
+  height: 230px;
+  align-self: center;
+}
+
+#techlist {
+  z-index: 1;
+  margin-left: 130px;
+}
+#techlist ul {
+  display: flex;
+  flex-direction: column;
+}
+#techlist ul li {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  height: 75px;
+  width: 30vw;
+  max-width: 588px;
+  border-top: solid 2px #1B1F32;
+}
+#techlist ul li h1 {
+  font-weight: 400;
+}
+#techlist ul:last-child {
+  border-bottom: solid 2px #1B1F32;
+}
+
+.tech-img {
+  user-select: none;
+  margin-right: 32px;
+  width: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+#triangle-shape {
+  height: 750px;
+  width: 289px;
+  bottom: 0;
+  position: absolute;
+  top: 73vh;
+  background-image: url(imgcss/shape-background.png);
+}
+
+@media (max-width: 1190px) {
+  body {
+    font-size: 8px;
+  }
+}
+@media (max-width: 950px) {
+  #nav-lightmode {
+    display: none;
+  }
+  #mDarkIcon {
+    color: #EEF0F4;
+  }
+  #mLightIcon {
+    color: #EEF0F4;
+  }
+  body {
+    font-size: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  #navigation {
+    height: 80px;
+  }
+  #navigation ul {
+    display: none;
+  }
+  .nav-icon {
+    width: 26px;
+    height: 26px;
+  }
+  #nav-darkmode {
+    display: none;
+  }
+  #nav-menu {
+    display: flex;
+  }
+  #right-menu {
+    transition: linear 0.4s;
+    position: fixed;
+    right: -45%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    width: 45%;
+    background-color: #0B0C0D;
+    z-index: 10;
+    color: #EEF0F4;
+  }
+  #right-menu > * {
+    width: 89%;
+  }
+  #menu-seminav {
+    justify-content: right;
+    display: flex;
+    align-items: center;
+    height: 80px;
+  }
+  #menu-seminav span {
+    color: #EEF0F4;
+  }
+  .right-menu-items {
+    display: flex;
+    flex-direction: column;
+  }
+  .right-menu-li {
+    display: flex;
+    padding: 10px 0px;
+    font-size: 2em;
+  }
+  .right-menu-li a {
+    color: #EEF0F4;
+  }
+  #mDarkIcon {
+    position: relative;
+    top: 5px;
+  }
+  .catline {
+    width: 112%;
+    margin-left: -6.5%;
+    border-top: solid 1px #222326;
+    margin-top: 10px;
+  }
+  #about-luan {
+    margin-left: 16px;
+  }
+  #luan-info {
+    display: flex;
+  }
+  #information, #download-curriculo {
+    z-index: 1;
+  }
+  #about-deco-mobile {
+    width: 33vw;
+    height: 300px;
+    position: absolute;
+    right: 0;
+    background-image: url(imgcss/Decoration001.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #current-page {
+    height: 18px;
+    width: 52px;
+    font-size: 1.2em;
+  }
+  #about-title {
+    font-size: 6em;
+  }
+  #about-text {
+    font-size: 1.28em;
+  }
+  #techs {
+    width: auto;
+    margin-left: 16px;
+    margin-right: 16px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  #triangle-shape, #logoTechs {
+    display: none;
+  }
+  #techlist {
+    margin-left: 0px;
+  }
+  #info-techs h1 {
+    font-size: 3.2em;
+  }
+  #info-techs p {
+    font-size: 1.2em;
+  }
+  #techlist {
+    margin-top: 56px;
+    width: 100%;
+  }
+  #techlist ul {
+    width: 100%;
+  }
+  #techlist ul li {
+    height: 75px;
+    width: 100%;
+    max-width: none;
+  }
+  #techlist ul li:nth-child(1) {
+    border-top: none;
+  }
+  #techlist ul li h1 {
+    font-size: 1.6em;
+  }
+  #techlist ul:last-child {
+    border-bottom: none;
+  }
+  .tech-img {
+    user-select: none;
+    margin-right: 32px;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+  }
+}
+@media (max-width: 570px) {
+  #about-text {
+    max-width: 250px;
+  }
+}
+
+/*# sourceMappingURL=sobreDARK_style.css.map */

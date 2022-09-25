@@ -4,9 +4,10 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
+    <title>Luan Carvalho's Portfolio</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='assets/css/index_style.css' id="cssLink">
+    <link rel="shortcut icon" href="ico.ico" type="image/x-icon">
     <!-- ICONS GOOGLE -->
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
@@ -49,14 +50,13 @@
                 <li class="right-menu-li catline"> </li>
             </ul>
             <ul class="right-menu-items">
-                <li class="right-menu-li" id="darkMobileBTN"> <a onclick="darkModeON()"> <span
+                <li class="right-menu-li" id="darkMobileBTN"> <a onclick="darkModeON();storageDark()"> <span
                             class="material-symbols-outlined" id="mDarkIcon"> dark_mode </span> Modo Escuro</a> </li>
-                <li class="_disabled" id="lightMobileBTN"> <a onclick="darkModeOFF()"> <span class="material-symbols-outlined"
+                <li class="_disabled" id="lightMobileBTN"> <a onclick="darkModeOFF();storageLight()"> <span class="material-symbols-outlined"
                             id="mDarkIcon"> light_mode </span> Modo Claro </a> </li>
             </ul>
         </article> 
     </nav>
-    <div id="bgfilter-menu"></div>
     <main class="style-light-bg">
         <div id="luan-info" class="">
             <div id="container-luan" class="spacing60">
@@ -68,7 +68,7 @@
                 </div>
                 <div id="luan-buttons">
                     <a href="sobre.html"><button id="btnsobre">Sobre</button> </a>
-                    <a href="https://www.behance.net/anluk"><button id="btncurriculo" href=""><img src=""> Currículo</button> </a>
+                    <a href=""><button id="btncurriculo" href=""><img src=""> Currículo</button> </a>
                 </div>
             </div>
         </div>
@@ -82,7 +82,7 @@
                                 id="linkedin-ico">
                             Linkedin</li>
                     </a>
-                    <a href="">
+                    <a href="https://www.behance.net/anluk">
                         <li id="liBehance"> <img src="assets/images/icons/Black/behanceBlack.png" class="social_icon"
                                 id="behance-ico">
                             Behance </li>
@@ -122,5 +122,5 @@
     </main>
 </body>
 <script src='assets/script/indexscript.js'></script>
-<script src='assets/script/darkmodeMutuals.js'></script>
+<script src='assets/script/mutuals.js'></script>
 </html>
