@@ -4,7 +4,7 @@ console.log('bob');
 function darkModeON() {
 
     let cssLinked = document.querySelector('#cssLink');
-    darkModeStyle = 'assets/css/sobreDARK_style.css';
+    darkModeStyle = 'assets/css/trabalhosDARK_style.css';
     cssLinked.href = darkModeStyle;
     changeImages()
     changeButtons();
@@ -29,7 +29,7 @@ function changeButtons() {
 // DARKMODE OFF 
 function darkModeOFF() {
     let cssLinked = document.querySelector('#cssLink');
-    lightModeStyle = 'assets/css/sobre_style.css';
+    lightModeStyle = 'assets/css/trabalhos_style.css';
     cssLinked.href = lightModeStyle;
     restoreImages();
     restoreButtons();
