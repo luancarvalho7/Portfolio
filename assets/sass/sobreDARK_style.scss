@@ -44,9 +44,7 @@ body {
 }
 
 // COMMON
-._disabled {
-    display: none;
-}
+
 
 ._enabled {
     display: flex;
@@ -87,6 +85,9 @@ body {
 }
 
 .nav-btn {
+    width: 48px;
+    height: 48px;
+    @include flexC();
     cursor: pointer;
 }
 
@@ -355,6 +356,14 @@ main {
         span {
         color: var.$dark-txtcolor;}
     }
+    
+    #closeMenu {
+        width: 48px;
+        height: 48px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       }
 
     .right-menu-items {
         display: flex;
@@ -492,4 +501,8 @@ main {
     #about-text {
         max-width: 250px;
         }
+}
+
+._disabled {
+    display: none;
 }

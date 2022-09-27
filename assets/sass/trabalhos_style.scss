@@ -47,9 +47,7 @@ body {
     background-color: var.$light-background;
 }
 
-._disabled {
-    display: none;
-}
+
 
 ._enabled {
     display: flex;
@@ -94,8 +92,9 @@ body {
 .nav-btn {
     width: 48px;
     height: 48px;
+    @include flexC();
     cursor: pointer;
-    @include flexC()
+    
 }
 
 .nav-icon {
@@ -153,6 +152,9 @@ main {
     font-size: 1.8em;
     margin-bottom: 24px;
 }
+.lineSeparator {
+    display: none;
+}
 // WEB DESIGN
 .mainSection {
     width: 95%;
@@ -161,7 +163,16 @@ main {
     flex-direction: column;
     align-items: center;
     margin-bottom: 32px;
+
+    &:last-child {
+        margin-bottom: 64px;
+    }
 }
+
+#titlesection {
+    margin-bottom: 0px;
+}
+
 // CONTAINER GRID 
 .containers {
     display: flex;
@@ -170,15 +181,22 @@ main {
 
 //CARD
 .cardProject {
-    width: 419px;
+    transition: transform 0.7s, box-shadow 0.7s;
+    color: var.$light-txtcolor;
+    width: 490px;
     height: auto;
     padding: 5px 20px 10px 20px;
     border-radius: 10px;
     background-color: var.$light-cardbackground;
     border: solid 1px var.$light-lines;
-    gap: 20px;
     margin-right: 32px;
-    &:last-child{
+
+    &:hover {
+        transform: translate(0px, -20px);
+        box-shadow: 0px 32px 20px -24px rgba(17, 50, 133, 0.18);
+    }
+
+    &:last-child {
         margin-right: 0px
     }
 }
@@ -189,7 +207,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-}   
+}
 
 .dateProject {
     display: flex;
@@ -204,6 +222,13 @@ main {
     width: 100%;
     height: 175px;
     border-radius: 5px;
+    overflow: hidden;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
 }
 
 
@@ -229,7 +254,8 @@ main {
     margin-top: 15px;
     display: flex;
 }
-.tag_default{
+
+.tag_default {
     margin-right: 4px;
     color: var.$light-accentcolor;
     border: solid 1px var.$light-accentcolor;
@@ -256,12 +282,17 @@ main {
 // MEDIAS 
 @media (max-width: 1190px) {
     body {
-        font-size: 0.8em;
+        font-size: 8px;
     }
+
+    .cardProject {
+        width: 400px;
+    }
+
+
 }
 
 @media (max-width: 950px) {
-
 
     #navigation {
         height: 80px;
@@ -310,6 +341,13 @@ main {
         align-items: center;
         height: 80px;
     }
+    #closeMenu {
+     width: 48px;
+     height: 48px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+    }
 
     .right-menu-items {
         display: flex;
@@ -337,4 +375,62 @@ main {
         border-top: solid 1px #222326;
         margin-top: 10px;
     }
+
+    //MAIN
+    #trabalhosTitle {
+        font-size: 4.8em;
+    }
+    .titleCategories {
+        font-size: 2.3em;
+    }
+    // Web Design
+
+    .containers {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .cardProject {
+        margin-right: 0px;
+        margin-top: 20px;
+
+        &:first-child {
+            margin-top: 0px;
+        }
+
+        &:hover {
+            transform: none;
+            box-shadow: none;
+        }
+    }
+
+
+    //Project Information 
+    .tags {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media (max-width:480px) {
+    //MAIN 
+    .cardProject {
+        width: 88%;
+    }
+    #trabalhosTitle, .titleCategories {
+        align-self: flex-start;
+    }
+    .titleCategories {
+        margin-top: 0px;
+    }
+    .lineSeparator {
+        display: flex;
+        width: 100%;
+        height: 2px;
+        background-color: #C3C6E4;
+        margin-bottom: 22px;
+    }
+}
+._disabled {
+    display: none;
 }

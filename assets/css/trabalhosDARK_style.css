@@ -1,0 +1,376 @@
+::-webkit-scrollbar-track {
+  border-radius: 0.125rem;
+  background-color: #0D0D17;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  border-radius: 1rem;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #EEF0F4;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 80px 1fr;
+  grid-template-areas: "nav" "main";
+  font-size: 10px;
+  color: #EEF0F4;
+  background-color: #0D0D17;
+}
+
+._enabled {
+  display: flex;
+}
+
+.style-light-bg {
+  background-color: #0D0D17;
+}
+
+.titleSyne {
+  font-family: "Syne", sans-serif;
+}
+
+#nav-general {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: nav;
+  border-bottom: solid 1px #1B1F32;
+}
+
+#navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 95%;
+  height: 100%;
+  max-width: 1960px;
+}
+#navigation ul li {
+  display: inline-block;
+  font-size: 1.6em;
+  margin: 0px 12px;
+}
+#navigation ul li a {
+  color: #EEF0F4;
+}
+
+.nav-btn {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.nav-icon {
+  width: 45px;
+  height: 45px;
+}
+
+.material-symbols-outlined {
+  display: flex;
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+  font-size: 24px;
+  user-select: none;
+}
+
+#nav-lightmode {
+  display: flex;
+}
+
+#nav-menu {
+  display: none;
+}
+
+#right-menu {
+  display: none;
+}
+
+#bgfilter-menu {
+  display: none;
+}
+
+.current-page_NAV {
+  font-weight: 700;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#trabalhosTitle {
+  margin-top: 32px;
+  font-size: 6.2em;
+}
+
+.titleCategories {
+  margin-top: 32px;
+  font-weight: 400;
+  font-size: 1.8em;
+  margin-bottom: 24px;
+}
+
+.lineSeparator {
+  display: none;
+}
+
+.mainSection {
+  width: 95%;
+  max-width: 1960px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 32px;
+}
+.mainSection:last-child {
+  margin-bottom: 64px;
+}
+
+#titlesection {
+  margin-bottom: 0px;
+}
+
+.containers {
+  display: flex;
+  width: auto;
+}
+
+.cardProject {
+  transition: transform 0.7s, box-shadow 0.7s;
+  color: #EEF0F4;
+  width: 490px;
+  height: auto;
+  padding: 5px 20px 10px 20px;
+  border-radius: 10px;
+  background-color: #06060B;
+  border: solid 1px #1B1F32;
+  margin-right: 32px;
+}
+.cardProject:hover {
+  transform: translate(0px, -20px);
+  box-shadow: 0px 32px 20px -24px rgba(13, 21, 51, 0.34);
+}
+.cardProject:last-child {
+  margin-right: 0px;
+}
+
+.cardContent {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dateProject {
+  display: flex;
+  align-self: start;
+  font-size: 1.8em;
+  font-weight: 600;
+}
+
+.project_image {
+  margin-top: 5px;
+  background-color: red;
+  width: 100%;
+  height: 175px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.project_image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.project_information {
+  margin-top: 10px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.title_tags {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.title_tags h1 {
+  font-size: 2.4em;
+}
+
+.tags {
+  margin-top: 15px;
+  display: flex;
+}
+
+.tag_default {
+  margin-right: 4px;
+  color: #6B95FF;
+  background-color: #0D1533;
+  padding: 4px 8px;
+  border-radius: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.project_description {
+  display: flex;
+  justify-content: end;
+  width: 100%;
+  color: #465064;
+}
+.project_description h2 {
+  display: flex;
+  font-size: 1em;
+  font-weight: 400;
+  align-items: center;
+}
+
+@media (max-width: 1190px) {
+  body {
+    font-size: 8px;
+  }
+  .cardProject {
+    width: 400px;
+  }
+}
+@media (max-width: 950px) {
+  #navigation {
+    height: 80px;
+  }
+  #navigation ul {
+    display: none;
+  }
+  .nav-icon {
+    width: 26px;
+    height: 26px;
+  }
+  #nav-darkmode {
+    display: none;
+  }
+  #nav-lightmode {
+    display: none;
+  }
+  #nav-menu {
+    display: flex;
+  }
+  #right-menu {
+    transition: linear 0.4s;
+    position: fixed;
+    right: -45%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    width: 45%;
+    background-color: #0B0C0D;
+    z-index: 10;
+    color: #EEF0F4;
+  }
+  #right-menu > * {
+    width: 89%;
+  }
+  #menu-seminav {
+    justify-content: right;
+    display: flex;
+    align-items: center;
+    height: 80px;
+  }
+  #closeMenu {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .right-menu-items {
+    display: flex;
+    flex-direction: column;
+  }
+  .right-menu-li {
+    display: flex;
+    padding: 10px 0px;
+    font-size: 2em;
+  }
+  .right-menu-li a {
+    color: #EEF0F4;
+  }
+  #mDarkIcon {
+    position: relative;
+    top: 5px;
+  }
+  .catline {
+    width: 112%;
+    margin-left: -6.5%;
+    border-top: solid 1px #222326;
+    margin-top: 10px;
+  }
+  #trabalhosTitle {
+    font-size: 4.8em;
+  }
+  .titleCategories {
+    font-size: 2.3em;
+  }
+  .containers {
+    align-items: center;
+    flex-direction: column;
+  }
+  .cardProject {
+    margin-right: 0px;
+    margin-top: 20px;
+  }
+  .cardProject:first-child {
+    margin-top: 0px;
+  }
+  .cardProject:hover {
+    transform: none;
+    box-shadow: none;
+  }
+  .tags {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+@media (max-width: 480px) {
+  .cardProject {
+    width: 88%;
+  }
+  #trabalhosTitle, .titleCategories {
+    align-self: flex-start;
+  }
+  .titleCategories {
+    margin-top: 0px;
+  }
+  .lineSeparator {
+    display: flex;
+    width: 100%;
+    height: 2px;
+    background-color: #C3C6E4;
+    margin-bottom: 22px;
+  }
+}
+._disabled {
+  display: none;
+}
+
+/*# sourceMappingURL=trabalhosDARK_style.css.map */

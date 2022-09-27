@@ -26,9 +26,6 @@ body {
     font-size: 10px;
 }
 
-._disabled {
-    display: none;
-}
 
 ._enabled {
     display: flex;
@@ -63,6 +60,9 @@ body {
 }
 
 .nav-btn {
+    width: 48px;
+    height: 48px;
+    @include flexC();
     cursor: pointer;
 }
 
@@ -406,6 +406,13 @@ main {
         align-items: center;
         height: 80px;
     }
+    #closeMenu {
+        width: 48px;
+        height: 48px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       }
 
     .right-menu-items {
         display: flex;
@@ -537,4 +544,7 @@ main {
         height: 50px;
     }
 
+}
+._disabled {
+    display: none;
 }

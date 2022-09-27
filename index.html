@@ -31,16 +31,21 @@
                 <li> <a href="contato.html"> Contato </a></li>
             </ul>
             <div id="right-nav">
-                <a id="nav-menu" onclick="expandMenu();" class="nav-btn"> <span class="material-symbols-outlined"> menu </span> </a>
-                <a id="nav-darkmode" onclick="darkModeON();storageDark()" class="nav-btn"><span class="material-symbols-outlined"> dark_mode </span> </a>
-                <a id="nav-lightmode" onclick="darkModeOFF();storageLight()" class="nav-btn"><span class="material-symbols-outlined"> light_mode </span> </a>
+                <a id="nav-menu" class="nav-btn" onclick="expandMenu();"> <span class="material-symbols-outlined"> menu
+                    </span> </a>
+                <a id="nav-darkmode" class="nav-btn" onclick="darkModeON();storageDark()"><span
+                        class="material-symbols-outlined"> dark_mode </span> </a>
+                <a id="nav-lightmode" class="nav-btn" onclick="darkModeOFF();storageLight()"><span
+                        class="material-symbols-outlined"> light_mode </span> </a>
             </div>
 
         </div>
     </nav>
     <nav id="right-menu">
         <div id="menu-seminav">
+            <a id="closeMenu">
             <span class="material-symbols-outlined" onclick="retractMenu()">close</span>
+            </a>
         </div>
         <article>
             <ul class="right-menu-items">

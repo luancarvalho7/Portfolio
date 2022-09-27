@@ -33,10 +33,6 @@ body {
   background-color: #DCE0FE;
 }
 
-._disabled {
-  display: none;
-}
-
 ._enabled {
   display: flex;
 }
@@ -71,6 +67,11 @@ body {
 }
 
 .nav-btn {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
 }
 
@@ -314,6 +315,13 @@ main {
   #menu-seminav span {
     color: #EEF0F4;
   }
+  #closeMenu {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   .right-menu-items {
     display: flex;
     flex-direction: column;
@@ -419,6 +427,9 @@ main {
   #about-text {
     max-width: 250px;
   }
+}
+._disabled {
+  display: none;
 }
 
 /*# sourceMappingURL=sobre_style.css.map */
