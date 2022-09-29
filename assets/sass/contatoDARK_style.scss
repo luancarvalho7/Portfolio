@@ -9,6 +9,7 @@
 // COMMON 
 
 
+
 ::-webkit-scrollbar-track {
     border-radius: 0.125rem;
     background-color: var.$dark-background;
@@ -25,6 +26,9 @@
     background-color: var.$dark-txtcolor;
 }
 
+:root {
+    --gradient: linear-gradient(83.62deg, #DCE0FE 52.43%, #1C3B8C 116.02%, #113285 116.02%);
+}
 
 * {
     margin: 0px;
@@ -35,7 +39,6 @@
 }
 
 body {
-
     height: 100vh;
     width: 100%;
     display: grid;
@@ -45,7 +48,6 @@ body {
         'nav'
         'main';
     font-size: 10px;
-    color: var.$dark-txtcolor;
     background-color: var.$dark-background;
 }
 
@@ -92,11 +94,12 @@ body {
 }
 
 .nav-btn {
+    color: var.$dark-txtcolor;
     width: 48px;
     height: 48px;
     @include flexC();
     cursor: pointer;
-    
+
 }
 
 .nav-icon {
@@ -136,149 +139,121 @@ body {
 }
 
 //MAIN 
-
 main {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-
-#trabalhosTitle {
-    margin-top: 32px;
-    font-size: 6.2em;
-}
-
-.titleCategories {
-    margin-top: 32px;
-    font-weight: 400;
-    font-size: 1.8em;
-    margin-bottom: 24px;
-}
-.lineSeparator {
-    display: none;
-}
-// WEB DESIGN
-.mainSection {
-    width: 95%;
-    max-width: 1960px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 32px;
-
-    &:last-child {
-        margin-bottom: 64px;
-    }
-}
-
-#titlesection {
-    margin-bottom: 0px;
-}
-
-// CONTAINER GRID 
-.containers {
-    display: flex;
-    width: auto;
-}
-
-//CARD
-.cardProject {
-    transition: transform 0.7s, box-shadow 0.7s;
-    color: var.$dark-txtcolor;
-    width: 490px;
-    height: auto;
-    padding: 5px 20px 10px 20px;
-    border-radius: 10px;
-    background-color: var.$dark-cardbackground;
-    border: solid 1px var.$dark-lines;
-    margin-right: 32px;
-
-    &:hover {
-        transform: translate(0px, -20px);
-        box-shadow: 0px 32px 20px -24px rgba(13, 21, 51, 0.34);
-    }
-
-    &:last-child {
-        margin-right: 0px
-    }
-}
-
-.cardContent {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.dateProject {
-    display: flex;
-    align-self: start;
-    font-size: 1.8em;
-    font-weight: 600;
-}
-
-.project_image {
-    margin-top: 5px;
-    width: 100%;
-    height: 175px;
-    border-radius: 5px;
-    overflow: hidden;
-
-    img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-}
-
-
-//Project Information 
-.project_information {
-    margin-top: 10px;
-    width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    width: 100%;
+    height: 100%;
 }
 
-.title_tags {
+//TITLE DECO
+.title-deco {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    justify-content: start;
+    align-items: center;
+    background-image: url(imgcss/DecorationSquare.png);
+    background-size: cover;
+}
+
+#information {
+    margin-left: 2.5vw;
 
     h1 {
-        font-size: 2.4em;
+        color: var.$dark-txtcolor;
+        font-size: 8.0em
     }
 }
 
-.tags {
-    margin-top: 15px;
-    display: flex;
+.contactSocial-icon {
+    width: 50px;
+    transition: all 0.4s;
+
+    &:hover {
+        transform: scale(1.3);
+    }
 }
 
-.tag_default {
-    margin-right: 4px;
-    color: var.$dark-accentcolor;
-    background-color: var.$dark-accentcolor2;
-    padding: 4px 8px;
-    border-radius: 10px;
-    font-weight: 700;
-    text-transform: uppercase;
+//FORM
+.content {
+    @include flexC();
 }
 
-.project_description {
-    display: flex;
-    justify-content: end;
-    width: 100%;
-    color: var.$dark-cardDescription;
+#formulario {
+    display: grid;
+    width: 55%;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    row-gap: 24px;
+}
 
-    h2 {
-        display: flex;
-        font-size: 1.0em;
+.inputField {
+    h1 {
+        color: var.$dark-cardDescription;
         font-weight: 400;
-        align-items: center;
+        margin-bottom: 6px;
     }
 }
+
+.inputContact {
+    height: 56px;
+}
+
+.customStyle-Frm {
+    color: var.$dark-txtcolor;
+    background-color: var.$dark-cardbackground;
+    border: solid 1px var.$dark-lines;
+    border-radius: 10px;
+    font-size: 1.6em;
+    width: 91%;
+    padding: 0px 16px;
+    outline: none;
+    transition: border 0.4s;
+
+    &:hover {
+        border: solid 1px var.$dark-accentcolor;
+    }
+
+    &:focus {
+        border: solid 1px var.$dark-accentcolor;
+    }
+}
+
+.txtA-Contact {
+    padding: 16px;
+    height: 320px;
+    resize: none;
+
+    &::-webkit-scrollbar-track {
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    &::-webkit-scrollbar {
+        width: 3px;
+        cursor: pointer;
+    }
+}
+
+
+#buttonSubmit {
+    height: 50px;
+    border-radius: 50px;
+    font-family: 'Syne', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    background-color: var.$dark-accentcolor2;
+    color: var.$dark-accentcolor;
+    outline: none;
+    border: none;
+
+
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+
 
 // MEDIAS 
 @media (max-width: 1190px) {
@@ -286,11 +261,9 @@ main {
         font-size: 8px;
     }
 
-    .cardProject {
-        width: 400px;
+    main {
+        grid-template-columns: 1fr 60%;
     }
-
-
 }
 
 @media (max-width: 950px) {
@@ -312,14 +285,12 @@ main {
         display: none;
     }
 
-    #nav-lightmode {
-        display: none;
-    }
-
     #nav-menu {
         display: flex;
     }
-
+    .nav-btn {
+        color: var.$dark-txtcolor
+    }
     // MENU EXPANDED MOBILE
 
     #right-menu {
@@ -346,12 +317,13 @@ main {
         align-items: center;
         height: 80px;
     }
+
     #closeMenu {
-     width: 48px;
-     height: 48px;
-     display: flex;
-     justify-content: center;
-     align-items: center;
+        width: 48px;
+        height: 48px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .right-menu-items {
@@ -381,61 +353,26 @@ main {
         margin-top: 10px;
     }
 
-    //MAIN
-    #trabalhosTitle {
-        font-size: 4.8em;
-    }
-    .titleCategories {
-        font-size: 2.3em;
-    }
-    // Web Design
-
-    .containers {
-        align-items: center;
-        flex-direction: column;
-    }
-
-    .cardProject {
-        margin-right: 0px;
-        margin-top: 20px;
-
-        &:first-child {
-            margin-top: 0px;
-        }
-
-        &:hover {
-            transform: none;
-            box-shadow: none;
-        }
-    }
-
-
-    //Project Information 
-    .tags {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-}
-
-@media (max-width:480px) {
     //MAIN 
-    .cardProject {
-        width: 88%;
+
+    main {
+        grid-template-columns: 1fr;
     }
-    #trabalhosTitle, .titleCategories {
-        align-self: flex-start;
+
+    .title-deco {
+        margin-bottom: 32px;
     }
-    .titleCategories {
-        margin-top: 0px;
+
+    #information {
+        margin-bottom: 16px;
+        margin-left: 3vw;
     }
-    .lineSeparator {
-        display: flex;
-        width: 100%;
-        height: 2px;
-        background-color: var.$dark-lines;
-        margin-bottom: 22px;
+
+    #formulario {
+        width: 80%;
     }
 }
+
 ._disabled {
     display: none;
 }

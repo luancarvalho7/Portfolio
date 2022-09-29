@@ -4,10 +4,10 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Trabalhos</title>
+    <title>Contato</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel="shortcut icon" href="ico.ico" type="image/x-icon">
-    <link rel='stylesheet' type='text/css' media='screen' href='assets/css/trabalhos_style.css' id="cssLink">
+    <link rel='stylesheet' type='text/css' media='screen' href='assets/css/contato_style.css' id="cssLink">
     <!-- ICONS GOOGLE -->
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
@@ -26,9 +26,9 @@
         <div id="navigation">
             <a href="index.html"><img src="assets/images/icons/Black/Logo.png" class="nav-icon" id="logonav"></a>
             <ul>
-                <li> <a href="trabalhos.html" class="current-page_NAV"> Trabalhos </a></li>
+                <li> <a href="trabalhos.html"> Trabalhos </a></li>
                 <li> <a href="sobre.html"> Sobre </a></li>
-                <li> <a href="contato.html"> Contato </a></li>
+                <li> <a href="contato.html" class="current-page_NAV"> Contato </a></li>
             </ul>
             <div id="right-nav">
                 <a id="nav-menu" class="nav-btn" onclick="expandMenu();"> <span class="material-symbols-outlined"> menu
@@ -44,7 +44,7 @@
     <nav id="right-menu">
         <div id="menu-seminav">
             <a id="closeMenu">
-            <span class="material-symbols-outlined" onclick="retractMenu()">close</span>
+                <span class="material-symbols-outlined" onclick="retractMenu()">close</span>
             </a>
         </div>
         <article>
@@ -64,93 +64,37 @@
         </article>
     </nav>
     <main>
-        <div class="mainSection" id="titlesection">
-            <h1 class="titleSyne" id="trabalhosTitle">Trabalhos:</h1>
-        </div>
-        <div id="webdesign" class="mainSection">
-            <h1 class="titleCategories">Web Design</h1>
-            <section class="containers">
-                <!-- vv LUAN'S PORTFOLIO CARD START vv -->
-                <a href="index.html" class="cardProject">
-                    <div class="cardContent">
-                        <div class="titleSyne dateProject">2022</div>
-                        <figcaption class="project_image"><img src="assets/images/project_pictures/LuanSPortfolio.png">
-                        </figcaption>
-                        <div class="project_information">
-                            <div class="title_tags">
-                                <h1 class="titleSyne">Luan's Portfolio</h1>
-                                <div class="tags">
-                                    <div class="tag_default">WEB DESIGN</div>
-                                    <div class="tag_default">IDENTIDADE VISUAL</div>
-                                </div>
-                            </div>
-                            <div class="project_description">
-                                <h2>Luan’s Portfolio é um portfolio desenvolvido em Setembro de 2022 para uso próprio.
-                                </h2>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-                <!-- vv LUAN'S PORTFOLIO CARD END vv -->
-                <!-- vv AZTRO CARD START vv -->
-                <a href="https://aztro.netlify.app/" class="cardProject">
-                    <div class="cardContent">
-                        <div class="titleSyne dateProject">2022</div>
-                        <figcaption class="project_image"><img src="assets/images/project_pictures/aztro.png">
-                        </figcaption>
-                        <div class="project_information">
-                            <div class="title_tags">
-                                <h1 class="titleSyne">aztro</h1>
-                                <div class="tags">
-                                    <div class="tag_default">WEB DESIGN</div>
-                                    <div class="tag_default">IDENTIDADE VISUAL</div>
-                                </div>
-                            </div>
-                            <div class="project_description">
-                                <h2>
-                                    aztro é um projeto de e-commerce <br>
-                                    fictício desenvolvido em julho de 2022
-                                </h2>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-                <!-- vv AZTRO CARD END vv -->
-            </section>
-        </div>
-        <div class="lineSeparator"> </div>
-        <div id="graphicdesign" class="mainSection">
-            <h1 class="titleCategories">Graphic Design</h1>
-            <section class="containers">
-                <!-- vv BEHANCE CARD START vv -->
-                <a href="https://www.behance.net/anluk" class="cardProject">
-                    <div class="cardContent">
-                        <div class="titleSyne dateProject">2022</div>
-                        <figcaption class="project_image"><img src="assets/images/project_pictures/behance.png">
-                        </figcaption>
-                        <div class="project_information">
-                            <div class="title_tags">
-                                <h1 class="titleSyne">Behance</h1>
-                                <div class="tags">
-                                    <div class="tag_default">DESIGN GRÁFICO</div>
-                                    <div class="tag_default">IDENTIDADE VUSAL</div>
-                                </div>
-                            </div>
-                            <div class="project_description">
-                                <h2>
-                                    Todos os trabalhos de Design Gráfico
-                                    feitos por mim desde de 2021
-                                </h2>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-                <!-- vv BEHANCE CARD END vv -->
-            </section>
-        </div>
+        <section class="title-deco">
+            <div id="information">
+                <h1 class="titleSyne">Contato</h1>
+                <div id="socialMedia">
+                    <a href="https://www.linkedin.com/in/luancarvalho7/"> <img
+                            src="assets/images/icons/White/linkedin.png" class="contactSocial-icon"> </a>
+                    <a href="https://www.behance.net/anluk"> <img src="assets/images/icons/White/behance.png"
+                            class="contactSocial-icon"> </a>
+                    <a href="https://github.com/luancarvalho7"> <img src="assets/images/icons/White/github.png"
+                            class="contactSocial-icon"> </a>
+                </div>
+            </div>
+        </section>
+        <section class="content">
+            <form id="formulario">
+                <div class="inputField">
+                    <h1>Nome</h1><input type="text" class="inputContact customStyle-Frm">
+                </div>
+                <div class="inputField">
+                    <h1>Email</h1><input type="email" class="inputContact customStyle-Frm">
+                </div>
+                <div class="inputField">
+                    <h1>Mensagem</h1>
+                    <textarea class="txtA-Contact customStyle-Frm"> </textarea>
+                </div>
+                <input type="submit" id="buttonSubmit" onclick="erroUndeveloped()">
+            </form>
+        </section>
     </main>
 </body>
-<script src='assets/script/trabalhosscript.js'></script>
+<script src='assets/script/contatoscript.js'></script>
 <script src='assets/script/mutuals.js'></script>
 
 </html>
