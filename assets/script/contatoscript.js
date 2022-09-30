@@ -58,8 +58,20 @@ function continuousDarkMode(){
         darkModeON();
     }
 }
-// WARN NAO DESENVOLVIDO 
-
-function erroUndeveloped() {
-    alert(' Erro <<<! Contato ainda em desenvolvimento, tente novamente mais tarde.');
+// Mascara Letra maiuscula 
+function firstletter() {
+    let message = document.getElementById('nameI').value;
+    let splited = message.split(' ');
+    let arrafinalTextMain = [];
+    for (let i = 0; i < splited.length; i++) {
+        arrafinalTextMain.push(fletter(splited[i]));
+    }
+    let finalText = arrafinalTextMain.join(' ');
+    document.getElementById('nameI').value = finalText;
 }
+
+function fletter(string) {
+    return string.charAt(0).toUpperCase() + string.slice(1);
+}
+
+

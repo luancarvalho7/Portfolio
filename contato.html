@@ -78,18 +78,18 @@
             </div>
         </section>
         <section class="content">
-            <form id="formulario">
+            <form id="formulario" action="https://formspree.io/f/mvoyrokz" method="POST">
                 <div class="inputField">
-                    <h1>Nome</h1><input type="text" class="inputContact customStyle-Frm">
+                    <h1>Nome</h1><input type="text" class="inputContact customStyle-Frm" id="nameI" name="Name:"  maxlength="120" required onkeyup="firstletter()">
                 </div>
                 <div class="inputField">
-                    <h1>Email</h1><input type="email" class="inputContact customStyle-Frm">
+                    <h1>Email</h1><input type="email" class="inputContact customStyle-Frm" name="Email:" maxlength="120" required>
                 </div>
                 <div class="inputField">
                     <h1>Mensagem</h1>
-                    <textarea class="txtA-Contact customStyle-Frm"> </textarea>
+                    <textarea name="Message:" class="txtA-Contact customStyle-Frm" maxlength="2000" required> </textarea>
                 </div>
-                <input type="submit" id="buttonSubmit" onclick="erroUndeveloped()">
+                <input type="submit" id="buttonSubmit">
             </form>
         </section>
     </main>
