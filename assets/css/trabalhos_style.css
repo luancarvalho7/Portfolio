@@ -150,7 +150,10 @@ main {
 
 .containers {
   display: flex;
+  flex-wrap: wrap;
   width: auto;
+  justify-content: center;
+  gap: 32px;
 }
 
 .cardProject {
@@ -162,7 +165,6 @@ main {
   border-radius: 10px;
   background-color: #CFD3EB;
   border: solid 1px #C3C6E4;
-  margin-right: 32px;
 }
 .cardProject:hover {
   transform: translate(0px, -20px);

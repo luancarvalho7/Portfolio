@@ -176,7 +176,10 @@ main {
 // CONTAINER GRID 
 .containers {
     display: flex;
+    flex-wrap: wrap;
     width: auto;
+    justify-content: center;
+    gap: 32px;
 }
 
 //CARD
@@ -189,7 +192,6 @@ main {
     border-radius: 10px;
     background-color: var.$light-cardbackground;
     border: solid 1px var.$light-lines;
-    margin-right: 32px;
 
     &:hover {
         transform: translate(0px, -20px);

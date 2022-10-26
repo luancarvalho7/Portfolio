@@ -96,7 +96,7 @@ body {
     height: 48px;
     @include flexC();
     cursor: pointer;
-    
+
 }
 
 .nav-icon {
@@ -154,9 +154,11 @@ main {
     font-size: 1.8em;
     margin-bottom: 24px;
 }
+
 .lineSeparator {
     display: none;
 }
+
 // WEB DESIGN
 .mainSection {
     width: 95%;
@@ -178,7 +180,10 @@ main {
 // CONTAINER GRID 
 .containers {
     display: flex;
+    flex-wrap: wrap;
     width: auto;
+    justify-content: center;
+    gap: 32px;
 }
 
 //CARD
@@ -191,7 +196,6 @@ main {
     border-radius: 10px;
     background-color: var.$dark-cardbackground;
     border: solid 1px var.$dark-lines;
-    margin-right: 32px;
 
     &:hover {
         transform: translate(0px, -20px);
@@ -346,12 +350,13 @@ main {
         align-items: center;
         height: 80px;
     }
+
     #closeMenu {
-     width: 48px;
-     height: 48px;
-     display: flex;
-     justify-content: center;
-     align-items: center;
+        width: 48px;
+        height: 48px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .right-menu-items {
@@ -385,9 +390,11 @@ main {
     #trabalhosTitle {
         font-size: 4.8em;
     }
+
     .titleCategories {
         font-size: 2.3em;
     }
+
     // Web Design
 
     .containers {
@@ -418,16 +425,21 @@ main {
 }
 
 @media (max-width:480px) {
+
     //MAIN 
     .cardProject {
         width: 88%;
     }
-    #trabalhosTitle, .titleCategories {
+
+    #trabalhosTitle,
+    .titleCategories {
         align-self: flex-start;
     }
+
     .titleCategories {
         margin-top: 0px;
     }
+
     .lineSeparator {
         display: flex;
         width: 100%;
@@ -436,6 +448,7 @@ main {
         margin-bottom: 22px;
     }
 }
+
 ._disabled {
     display: none;
 }

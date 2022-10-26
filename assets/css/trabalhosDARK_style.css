@@ -151,7 +151,10 @@ main {
 
 .containers {
   display: flex;
+  flex-wrap: wrap;
   width: auto;
+  justify-content: center;
+  gap: 32px;
 }
 
 .cardProject {
@@ -163,7 +166,6 @@ main {
   border-radius: 10px;
   background-color: #06060B;
   border: solid 1px #1B1F32;
-  margin-right: 32px;
 }
 .cardProject:hover {
   transform: translate(0px, -20px);
@@ -354,7 +356,8 @@ main {
   .cardProject {
     width: 88%;
   }
-  #trabalhosTitle, .titleCategories {
+  #trabalhosTitle,
+.titleCategories {
     align-self: flex-start;
   }
   .titleCategories {
