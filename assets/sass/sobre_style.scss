@@ -190,12 +190,13 @@ main {
     background-color: var.$light-txtcolor;
     border: 0px;
     color: var.$light-background;
-    margin-top: 24px;
+    
 }
 
 #download-curriculo {
     display: flex;
-    max-width: 60px;
+    margin-top: 24px;
+    width: fit-content;
 }
 
 #about-deco {
@@ -279,12 +280,15 @@ main {
 #triangle-shape {
     height: 750px;
     width: 289px;
-    bottom: 0;
+    bottom: -70vh;
     position: absolute;
-    top: 73vh;
     background-image: url(imgcss/shape-background.png);
 }
-
+@media (max-height: 886px) {
+    #triangle-shape {
+        display: none;
+    }
+}
 @media (max-width: 1190px) {
     body {
         font-size: 8px;
